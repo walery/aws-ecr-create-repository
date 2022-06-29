@@ -16,7 +16,7 @@ This is the most simple example.
 It will create a ECR repository using the git repository's name.
 
 ```yaml
-      - uses: @2iq/aws-ecr-create-repository@v1
+      - uses: 2iq/aws-ecr-create-repository@v1
 ```
 
 ### Create ECR repo with custom name
@@ -24,7 +24,7 @@ It will create a ECR repository using the git repository's name.
 A custom name can set with the property `ecr-name`.
 
 ```yaml
-      - uses: @2iq/aws-ecr-create-repository@v1
+      - uses: 2iq/aws-ecr-create-repository@v1
         with:
           ecr-name: my-custom-ecr-repo-name
 ```
@@ -51,7 +51,7 @@ jobs:
 
       - name: Create ECR repo if necessary
         id: ecr-repo
-        uses: @2iq/aws-ecr-create-repository@v1
+        uses: 2iq/aws-ecr-create-repository@v1
         with:
           ecr-name: my-custom-ecr-repo-name
 
